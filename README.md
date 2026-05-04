@@ -8,16 +8,13 @@ This project focuses on building and extending Universal Verification Methodolog
 
 ---
 
-## 📁 Repository File Structure
+## Repository File Structure
 The project is organized to separate design, verification packages, and individual component environments.
 
-<p align="center">
-  <img src="images/file_structure.png" alt="File Structure" width="600"/>
-</p>
 
 ---
 
-## 🏗️ UVM Architecture & Testbench Structure
+## UVM Architecture & Testbench Structure
 The UVM testbench is designed for modularity and reuse. Below is the architecture showing the integration of the Wrapper Environment.
 
 <p align="center">
@@ -32,7 +29,7 @@ The testbench is driven by a top-level `wrapper_test` which dictates the sequenc
 
 ---
 
-## 💻 Design Under Test (DUT)
+## Design Under Test (DUT)
 The complete system wraps the SPI Slave and Single-Port RAM components.
 
 <p align="center">
@@ -41,7 +38,7 @@ The complete system wraps the SPI Slave and Single-Port RAM components.
 
 ---
 
-## 📊 Verification Plan & Requirements
+## Verification Plan & Requirements
 
 ### Part 1: SPI-Slave Environment
 * **Sequences:** `reset_sequence`, `main_sequence`.
@@ -62,7 +59,7 @@ The complete system wraps the SPI Slave and Single-Port RAM components.
 
 ---
 
-## 🛡️ Assertions Table
+## Assertions Table
 Assertions are heavily utilized to guard FSM transitions and validate protocol rules. They are conditionally compiled using the `+define+SIM` macro.
 
 | Feature | Assertion |
@@ -79,22 +76,22 @@ Assertions are heavily utilized to guard FSM transitions and validate protocol r
 
 ---
 
-## 📈 Coverage Reports
+## Coverage Reports
 
 **Functional Coverage & Assertion Coverage:**
 The environment achieves 100% functional and assertion coverage (excluding 2-D RAM declaration from toggle coverage).
 
 <p align="center">
-  <img src="images/assertion_cov.png" alt="Assertion Coverage" width="800"/>
+  <img src="images/assertion_coverage.png" alt="Assertion Coverage" width="800"/>
 </p>
 
 <p align="center">
-  <img src="images/func_cov.png" alt="Functional Coverage" width="800"/>
+  <img src="images/func_coverage.png" alt="Functional Coverage" width="800"/>
 </p>
 
 ---
 
-## 🌊 Waveforms & Simulation Snippets
+## Waveforms & Simulation Snippets
 
 **Write Only Sequence:**
 <p align="center">
@@ -106,9 +103,13 @@ The environment achieves 100% functional and assertion coverage (excluding 2-D R
   <img src="images/read_only_wave.png" alt="Read Only Waveform" width="800"/>
 </p>
 
+**Read-Write Only Sequence:**
+<p align="center">
+  <img src="images/read_write_wave.png" alt="Read Only Waveform" width="800"/>
+</p>
 ---
 
-## 🏭 UVM Factory Registration
+## UVM Factory Registration
 All environments, agents, sequences, and configurations are successfully registered with the UVM factory.
 
 <p align="center">
@@ -117,7 +118,7 @@ All environments, agents, sequences, and configurations are successfully registe
 
 ---
 
-## 🚀 How to Run the Code
+## How to Run the Code
 
 This project uses standard mentor graphics tools (QuestaSim/ModelSim). The compile and run flow is automated using the provided list and DO files.
 
