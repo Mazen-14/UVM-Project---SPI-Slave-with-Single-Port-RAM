@@ -1,6 +1,6 @@
 # SPI Wrapper with Single-Port RAM - UVM Verification
 
-## 📌 Project Objective
+## Project Objective
 This project focuses on building and extending Universal Verification Methodology (UVM) environments to verify a complete SPI Wrapper system. The project is executed in three distinct phases, demonstrating the verification of individual components and the powerful reusability of UVM environments during final system integration:
 1. **RAM Verification:** Verification of a Single-Port RAM.
 2. **SPI Slave Verification:** Verification of the SPI Slave interface.
