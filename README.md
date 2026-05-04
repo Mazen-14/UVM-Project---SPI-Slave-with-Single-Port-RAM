@@ -1,4 +1,5 @@
 # SPI Wrapper with Single-Port RAM - UVM Verification
+> **By:** Mazen Mohamed Hemdan
 
 ## Project Objective
 This project focuses on building and extending Universal Verification Methodology (UVM) environments to verify a complete SPI Wrapper system. The project is executed in three distinct phases, demonstrating the verification of individual components and the powerful reusability of UVM environments during final system integration:
@@ -133,3 +134,27 @@ vsim -do run.do
 4. **Viewing Coverage:**
 The run.do file is configured to generate coverage reports.
 You can view the HTML reports generated in the working directory or analyze them directly in the QuestaSim GUI under the coverage tabs
+---
+
+## Documentation
+
+A detailed project report (`Document.pdf`) is included in the repository with:
+- Verification plan
+- UVM testbench showing the UVM structure using draw.io
+- Section where I describe in detail how my UVM testbench work.
+- Code snippets
+- Code Coverage report
+- Functional Coverage report, and Sequential Domain Coverage report
+- Bug report
+- Sections with QuestaSim snippets for each UVM sequence and how the interface is
+driven in each sequence using the waveform snippets
+- Also, a table showing the assertions
+
+---
+
+## Author
+
+**Mazen Mohamed Hemdan**  
+Bachelor of Computer Engineering  
+Focus: Digital Design, Computer Architecture, Hardware Verification
+
