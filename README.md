@@ -125,3 +125,22 @@ This project uses standard mentor graphics tools (QuestaSim/ModelSim). The compi
    ```bash
    git clone <your-repo-url>
    cd <your-repo-directory>
+2. **Source Files List:**
+This file contains the paths to all the Verilog design files, SystemVerilog packages, UVM sequences, and testbench components. Ensure all file paths align with your local directory structure.
+
+3. **Execution via DO file (run.do):**
+The .do file contains the commands to compile the source list, enable coverage, apply the SIM macro for assertions, and run the simulation.
+
+Open your QuestaSim/ModelSim terminal and execute:
+```bash
+Tcl
+vsim -do run.do
+
+
+   *Alternatively, if running in batch mode from a Linux/Windows CLI:*
+   ```bash
+   vsim -c -do run.do
+```  
+4. **Viewing Coverage:**
+The run.do file is configured to generate coverage reports.
+You can view the HTML reports generated in the working directory or analyze them directly in the QuestaSim GUI under the coverage tabs
