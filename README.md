@@ -133,13 +133,7 @@ The .do file contains the commands to compile the source list, enable coverage, 
 
 Open your QuestaSim/ModelSim terminal and execute:
 ```bash
-Tcl
 vsim -do run.do
-
-
-   *Alternatively, if running in batch mode from a Linux/Windows CLI:*
-   ```bash
-   vsim -c -do run.do
 ```  
 4. **Viewing Coverage:**
 The run.do file is configured to generate coverage reports.
