@@ -28,7 +28,7 @@ The testbench is driven by a top-level `wrapper_test` which dictates the sequenc
 The complete system wraps the SPI Slave and Single-Port RAM components.
 
 <p align="center">
-  <img src="images/spi_wrapper_dut.png" alt="SPI Wrapper Class" width="600"/>
+  <img src="images/spi_wrapper.png" alt="SPI Wrapper Class" width="600"/>
 </p>
 
 ---
