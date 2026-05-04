@@ -11,6 +11,47 @@ This project focuses on building and extending Universal Verification Methodolog
 ## Repository File Structure
 The project is organized to separate design, verification packages, and individual component environments.
 
+SPI-Slave-UVM-Verification
+├── Design & Packages
+│   ├── spi_pkg.sv
+│   ├── ram_pkg.sv
+│   ├── wrapper_pkg.sv
+│   └── common_defs.sv
+│
+├── SPI
+│   ├── rtl/
+│   │   └── spi_slave.sv
+│   ├── tb/
+│   │   ├── spi_interface.sv
+│   │   ├── spi_agent/
+│   │   ├── spi_sequences/
+│   │   ├── spi_driver.sv
+│   │   ├── spi_monitor.sv
+│   │   └── spi_config.sv
+│
+├── RAM
+│   ├── rtl/
+│   │   └── single_port_ram.sv
+│   ├── tb/
+│   │   ├── ram_interface.sv
+│   │   ├── ram_agent/
+│   │   ├── ram_sequences/
+│   │   ├── ram_driver.sv
+│   │   ├── ram_monitor.sv
+│   │   └── ram_config.sv
+│
+├── Wrapper
+│   ├── rtl/
+│   │   └── spi_wrapper.sv
+│   ├── tb/
+│   │   ├── wrapper_env.sv
+│   │   ├── wrapper_scoreboard.sv
+│   │   ├── wrapper_sequences/
+│   │   └── wrapper_test.sv
+│
+├── 📄 src_files.list        # List of all source files for compilation
+├── 📄 run.do                # Simulation automation script (QuestaSim)
+├── 📄 README.md             # Project documentation
 
 ---
 
